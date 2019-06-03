@@ -12,10 +12,10 @@ const convertProfile = nsProfileConvert.convertProfile
 const my_nightscout_url = "https://my.ns.site"
 
 // Load the default Profile from a Nightscout site
-let profile_default = fetchProfile(my_nightscout_url)
+let profile_default = await fetchProfile(my_nightscout_url)
 
 // Load a profile by name
-let profile_autotune = fetchProfile(my_nightscout_url, "autotune")
+let profile_autotune = await fetchProfile(my_nightscout_url, "autotune")
 
 // Convert a profile to OpenAPS format
 // (!) You have to provide min_5m_carbimpact yourself, 

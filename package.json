@@ -1,0 +1,32 @@
+{
+  "name": "nightscout-profile-convert",
+  "version": "1.0.0",
+  "description": "Convert a nightscout profile to openAPS format",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/nielsmaerten/nightscout-profile-convert"
+  },
+  "scripts": {
+    "test": "ava",
+    "prettier": "prettier",
+    "prettier:reformat": "prettier --write {test,src}/*.js"
+  },
+  "keywords": [
+    "nightscout",
+    "oref0",
+    "autotune",
+    "openaps"
+  ],
+  "author": {
+    "name": "Niels Maerten",
+    "url": "https://github.com/nielsmaerten"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "ava": "^2.0.0",
+    "prettier": "1.17.1"
+  }
+}
